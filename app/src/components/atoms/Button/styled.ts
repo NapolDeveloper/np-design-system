@@ -16,6 +16,11 @@ export const StyledButton = styled('button').withConfig({
 
   ${({ size }) => getSizeStyles(size)}
   ${({ btnType }) => getTypeStyles(btnType)}
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
 `;
 
 const getSizeStyles = (size?: Size) => {

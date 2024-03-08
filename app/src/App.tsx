@@ -5,7 +5,9 @@ function App() {
   return (
     <div>
       <Provider>
-        <Button size="lg">lg</Button>
+        <Button size="lg" disabled>
+          lg
+        </Button>
         <Button size="md">md</Button>
         <Button size="sm">sm</Button>
         <div></div>
