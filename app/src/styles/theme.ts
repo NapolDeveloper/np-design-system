@@ -14,6 +14,10 @@ const color = {
     primary: '#22c55e',
     hover: '#16a34a',
   },
+  grey: {
+    primary: '#6b7280',
+    hover: '#4b5563',
+  },
 
   white: '#FFFFFF',
   black: '#000000',
