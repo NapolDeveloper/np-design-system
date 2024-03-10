@@ -6,6 +6,7 @@ import Button from 'components/atoms/Button';
 // Wrapper를 통해 버튼 간의 간격을 조절
 const Wrapper = styled.div`
   display: flex;
+  align-items: center;
   gap: 1rem;
 `;
 
@@ -19,7 +20,10 @@ const meta: Meta<typeof Button> = {
       action: 'clicked',
     },
     size: {
-      description: 'ss',
+      description: '버튼의 사이즈를 설정합니다.',
+    },
+    btnType: {
+      description: '버튼의 타입을 설정합니다.',
     },
   },
 };
@@ -37,9 +41,9 @@ export const Primary: Story = {
 export const Size = () => {
   return (
     <Wrapper>
-      <Button size="lg">lg</Button>
-      <Button size="md">md</Button>
-      <Button size="sm">sm</Button>
+      <Button size="lg">Button</Button>
+      <Button size="md">Button</Button>
+      <Button size="sm">Button</Button>
     </Wrapper>
   );
 };
