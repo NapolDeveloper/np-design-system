@@ -7,6 +7,8 @@ import { shouldNotForwardPropsWithKeys } from 'libs/shouldForwardProp';
 export const StyledButton = styled('button').withConfig({
   shouldForwardProp: shouldNotForwardPropsWithKeys<ButtonProps>(['size', 'btnType']),
 })<ButtonProps>`
+  width: fit-content;
+  height: fit-content;
   border: none;
   border-radius: 4px;
   transition: all 0.3s ease;
